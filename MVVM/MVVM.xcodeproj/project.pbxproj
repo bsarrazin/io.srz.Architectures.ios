@@ -15,6 +15,8 @@
 		B52BAA0421E12007006960D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52BAA0321E12007006960D6 /* Assets.xcassets */; };
 		B52BAA0721E12007006960D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52BAA0521E12007006960D6 /* LaunchScreen.storyboard */; };
 		B52BAA1221E12007006960D6 /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52BAA1121E12007006960D6 /* MVVMTests.swift */; };
+		B5E0283521E5027200ACB942 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0283421E5027200ACB942 /* Model.swift */; };
+		B5E0283721E67B8800ACB942 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0283621E67B8800ACB942 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		B52BAA0D21E12007006960D6 /* MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52BAA1121E12007006960D6 /* MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTests.swift; sourceTree = "<group>"; };
 		B52BAA1321E12007006960D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E0283421E5027200ACB942 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B5E0283621E67B8800ACB942 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F9521AEA238381187E6F65BA /* Pods_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4C78723304E4DDF075C9CB /* Pods-MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MVVMTests/Pods-MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +131,8 @@
 			children = (
 				B52BA9FC21E12006006960D6 /* AppDelegate.swift */,
 				B52BA9FE21E12006006960D6 /* ViewController.swift */,
+				B5E0283421E5027200ACB942 /* Model.swift */,
+				B5E0283621E67B8800ACB942 /* ViewModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -345,7 +351,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E0283521E5027200ACB942 /* Model.swift in Sources */,
 				B52BA9FF21E12006006960D6 /* ViewController.swift in Sources */,
+				B5E0283721E67B8800ACB942 /* ViewModel.swift in Sources */,
 				B52BA9FD21E12006006960D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,7 +554,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD4C78723304E4DDF075C9CB /* Pods-MVVMTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M9MT4KJZD;
@@ -568,7 +575,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79CF89E54E3257E2414914DF /* Pods-MVVMTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M9MT4KJZD;
