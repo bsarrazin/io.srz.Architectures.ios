@@ -11,6 +11,9 @@
       location = "group:MVVM/MVVM.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MVVS/MVVS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
